@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Hồ Cá Nhóm 02</title>
+</head>
+
+<body>
+    <div id="background">
+        <!-- con cá mập -->
+        <div id="shark">
+            <img src="/IMAGES/shark.gif">
+        </div>
+        <!-- con cá heo -->
+        <div id="whale">
+            <img src="/IMAGES/whale.gif" alt="">
+        </div>
+        <!-- 3 con cá -->
+        <div id="Fish_Gold">
+            <img src="/IMAGES/gif_fishGold.gif" alt="">
+        </div>
+        <!-- 1 con ruà-->
+        <div id="turtle">
+            <img src="/IMAGES/turtle.gif" alt="">
+        </div>
+        <!-- 1 con cua -->
+        <div id="crab">
+            <img src="/IMAGES/crab.gif" alt="">
+        </div>
+        <!-- con cá nhỏ màu xanh -->
+        <div id="fishBlue">
+            <img src="/IMAGES/fishBlue.gif" alt="">
+        </div>
+        <!-- con ếch -->
+        <div id="frog">
+            <img src="/IMAGES/frog.gif" alt="">
+        </div>
+
+        <!-- tàu ngầm -->
+        <div id="submarine">
+            <img src="/IMAGES/submarine1.gif" alt="">
+        </div>
+        <!-- nhac nen -->
+        <div id="audio">
+            <audio controls autoplay>
+            <source src="/MEDIA/Tiengsongbien-Dangcapnhat_nxpf.mp3" type="audio/mpeg">
+        </audio>
+            <!-- button background ban ngày -->
+        </div>
+        <div id="btnBackgroundLight">
+            <button type="button" onclick="changeBG1()">Ngày</button>
+        </div>
+        <div id="btnBackgroundNight">
+            <button type="button" onclick="changeBG2()">Đêm</button>
+        </div>
+        <!-- bot nuoc -->
+        <div id="bubble">
+            <img src="/IMAGES/bubble.gif" alt="">
+            <img src="/IMAGES/bubble.gif" alt="">
+            <img src="/IMAGES/bubble.gif" alt="">
+            <img src="/IMAGES/bubble.gif" alt="">
+            <img src="/IMAGES/bubble.gif" alt="">
+            <img src="/IMAGES/bubble.gif" alt="">
+        </div>
+        <!-- rong bien -->
+        <div id="seaweed">
+            <img src="/IMAGES/rongbien.gif" alt="">
+            <img src="/IMAGES/rongbien.gif" alt="">
+            <img src="/IMAGES/rongbien.gif" alt="">
+        </div>
+        <!-- cục đá -->
+        <div id="rock">
+            <img src="/IMAGES/rock-clipart-free-2-removebg-preview.png" alt="">
+        </div>
+        <!-- tho lan -->
+        <div id="diver">
+            <img src="/IMAGES/diver1.gif" alt="">
+        </div>
+    </div>
+    <!-- JS đổi background -->
+    <script>
+        function changeBG1() {
+            document.getElementById("background").style.backgroundImage = "url('/IMAGES/bg6.jpg')";
+        }
+
+        function changeBG2() {
+            document.getElementById("background").style.backgroundImage = "url('/IMAGES/bg3.jpg')";
+        }
+    </script>
+</body>
+
+</html>

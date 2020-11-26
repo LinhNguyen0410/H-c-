@@ -1,0 +1,566 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    /* tạo background hồ bơi */
+    
+    #background {
+        width: 100%;
+        height: 765px;
+        background-image: url(/IMAGES/bg5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    /* con cá mập */
+    
+    #shark {
+        position: absolute;
+        -webkit-animation-name: Shark;
+        -webkit-animation-duration: 20s;
+        -webkit-animation-timing-function: ease-in;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        -webkit-transform: scaleX(1);
+        /* Microsoft Edge  */
+        -ms-animation-name: Shark;
+        -ms-animation-duration: 20s;
+        -ms-animation-timing-function: ease-in;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-play-state: running;
+        -ms-transform: scaleX(1);
+        /* Firefox */
+        -Moz-animation-name: Shark;
+        -Moz-animation-duration: 20s;
+        -Moz-animation-timing-function: ease-in;
+        -Moz-animation-iteration-count: infinite;
+        -Moz-animation-play-state: running;
+        -Moz-transform: scaleX(1)
+    }
+    
+    @-webkit-keyframes Shark {
+        0% {
+            right: 50px;
+            top: 430px;
+        }
+        50% {
+            right: 250px;
+            top: 40px;
+        }
+        70% {
+            right: 1050px;
+            top: 200px;
+        }
+        100% {
+            right: 10px;
+            top: 300px;
+            -webkit-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+            -Moz-transform: scaleX(-1);
+        }
+    }
+    
+    #shark img {
+        width: 400px;
+        height: 200px;
+    }
+    /*con cá heo */
+    
+    #whale img {
+        width: 400px;
+        height: 320px;
+    }
+    
+    #whale {
+        position: absolute;
+        -webkit-animation-name: whale;
+        -webkit-animation-duration: 20s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        /*  */
+        -ms-animation-name: whale;
+        -ms-animation-duration: 20s;
+        -ms-animation-timing-function: linear;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-play-state: running;
+        /*  */
+        -Moz-animation-name: whale;
+        -Moz-animation-duration: 20s;
+        -Moz-animation-timing-function: linear;
+        -Moz-animation-iteration-count: infinite;
+        -Moz-animation-play-state: running;
+    }
+    
+    @-webkit-keyframes whale {
+        0% {
+            left: 0px;
+            top: 400px;
+        }
+        25% {
+            left: 60px;
+            top: 300px;
+        }
+        50% {
+            left: 200px;
+            top: 300px;
+        }
+        75% {
+            left: 700px;
+            top: 150px;
+        }
+        100% {
+            left: 1100px;
+            top: 50px;
+        }
+    }
+    /* 3 con cá vàng */
+    
+    #Fish_Gold img {
+        width: 350px;
+        height: 250px;
+    }
+    
+    #Fish_Gold {
+        position: absolute;
+        -webkit-animation-name: fishGold;
+        -webkit-animation-duration: 30s;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -ms-animation-name: fishGold;
+        -ms-animation-duration: 30s;
+        -ms-animation-timing-function: ease-in-out;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -Moz-animation-name: fishGold;
+        -Moz-animation-duration: 30s;
+        -Moz-animation-timing-function: ease-in-out;
+        -Moz-animation-iteration-count: infinite;
+        -Moz-animation-play-state: running;
+    }
+    
+    @-webkit-keyframes fishGold {
+        0% {
+            right: 50px;
+            top: 50px;
+        }
+        50% {
+            right: 700px;
+            top: 480px;
+            transform: rotate(-10deg);
+        }
+        75% {
+            right: 1000px;
+            top: 250px;
+            transform: rotate(20deg);
+            -webkit-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+            -Moz-transform: scaleX(-1);
+        }
+        90% {
+            right: 200px;
+            top: 480px;
+        }
+        100% {
+            right: 1050px;
+            top: 480px;
+        }
+    }
+    /*  con rùa */
+    
+    #turtle img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    #turtle {
+        position: absolute;
+        -webkit-animation-name: turtle;
+        -webkit-animation-duration: 80s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -ms-animation-name: turtle;
+        -ms-animation-duration: 80s;
+        -ms-animation-timing-function: linear;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -Moz-animation-name: turtle;
+        -Moz-animation-duration: 80s;
+        -Moz-animation-timing-function: linear;
+        -Moz-animation-iteration-count: infinite;
+        -Moz-animation-play-state: running;
+    }
+    
+    @-webkit-keyframes turtle {
+        0% {
+            left: 0px;
+            top: 600px;
+        }
+        100% {
+            left: 1200px;
+            top: 600px;
+        }
+    }
+    /*  con cua */
+    
+    #crab img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    #crab {
+        position: absolute;
+        -webkit-animation-name: crab;
+        -webkit-animation-duration: 50s;
+        -webkit-animation-timing-function: inherit;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -ms-animation-name: crab;
+        -ms-animation-duration: 50s;
+        -ms-animation-timing-function: inherit;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -Moz-animation-name: crab;
+        -Moz-animation-duration: 50s;
+        -Moz-animation-timing-function: inherit;
+        -Moz-animation-iteration-count: infinite;
+        -Moz-animation-play-state: running;
+    }
+    
+    @-webkit-keyframes crab {
+        0% {
+            left: 0px;
+            top: 40px;
+        }
+        50% {
+            left: 200px;
+            top: 100px;
+            -webkit-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+            -Moz-transform: scaleX(-1);
+        }
+        100% {
+            left: 1300px;
+            top: 40px;
+        }
+    }
+    
+    #fishBlue img {
+        width: 220px;
+        height: 200px;
+    }
+    
+    #fishBlue {
+        position: absolute;
+        -webkit-animation-name: fishBlue;
+        -webkit-animation-duration: 20s;
+        -webkit-animation-timing-function: ease-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -ms-animation-name: fishBlue;
+        -ms-animation-duration: 20s;
+        -ms-animation-timing-function: ease-out;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -Moz-animation-name: fishBlue;
+        -Moz-animation-duration: 20s;
+        -Moz-animation-timing-function: ease-out;
+        -Moz-animation-iteration-count: infinite;
+        -Moz-animation-play-state: running;
+    }
+    
+    @-webkit-keyframes fishBlue {
+        0% {
+            right: 0px;
+            top: 200px;
+        }
+        25% {
+            right: 100px;
+            top: 50px;
+        }
+        50% {
+            right: 200px;
+            top: 100px;
+        }
+        75% {
+            right: 1300px;
+            top: 400px;
+        }
+        100% {
+            right: 1300px;
+            top: 450px;
+        }
+    }
+    /* con ếch */
+    
+    #frog {
+        position: absolute;
+        right: 50px;
+        bottom: 220px;
+    }
+    
+    @-webkit-keyframes frog {
+        0% {
+            right: 50px;
+            bottom: 200px;
+        }
+        100% {
+            right: 30px;
+            bottom: 250px;
+        }
+    }
+    
+    #frog {
+        position: absolute;
+        -webkit-animation-name: frog;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -ms-animation-name: frog;
+        -ms-animation-duration: 1s;
+        -ms-animation-timing-function: linear;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -Moz-animation-name: frog;
+        -Moz-animation-duration: 1s;
+        -Moz-animation-timing-function: linear;
+        -Moz-animation-iteration-count: infinite;
+        -Moz-animation-play-state: running;
+    }
+    /* tàu ngầm */
+    
+    #submarine img {
+        width: 250px;
+        height: 300px;
+    }
+    
+    #submarine {
+        position: absolute;
+        -webkit-animation-name: submarine;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -ms-animation-name: submarine;
+        -ms-animation-duration: 30s;
+        -ms-animation-timing-function: ease-in-out;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -Moz-animation-name: submarine;
+        -Moz-animation-duration: 30s;
+        -Moz-animation-timing-function: ease-in-out;
+        -Moz-animation-iteration-count: infinite;
+        -Moz-animation-play-state: running;
+    }
+    
+    @-webkit-keyframes submarine {
+        0% {
+            left: 0px;
+            top: 20px;
+        }
+        25% {
+            left: 20px;
+            top: 200px;
+        }
+        50% {
+            transform: rotate(20deg);
+            left: 200px;
+            top: 150px;
+            -webkit-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+            -Moz-transform: scaleX(-1);
+        }
+        75% {
+            left: 1200px;
+            top: 20px;
+        }
+        100% {
+            left: 10px;
+            top: 400px;
+            transform: rotate3d(10deg);
+        }
+    }
+    /* bong bong */
+    
+    #bubble img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #bubble {
+        position: absolute;
+        bottom: 0px;
+    }
+    /* rong bien */
+    
+    #seaweed img {
+        width: 450px;
+        height: 450px;
+    }
+    
+    #seaweed {
+        position: absolute;
+        bottom: 0px;
+    }
+    /* cuc da */
+    
+    #rock {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    /* tho lan */
+    
+    #diver {
+        position: absolute;
+        right: 50px;
+        bottom: 300px;
+    }
+    
+    #diver img {
+        width: 400px;
+        height: 320px;
+    }
+    
+    @-webkit-keyframes diver {
+        0% {
+            right: 50px;
+            top: 200px;
+        }
+        10% {
+            right: 100px;
+            top: 200px;
+        }
+        25% {
+            right: 130px;
+            top: 250px;
+            -webkit-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+            -Moz-transform: scaleX(-1);
+        }
+        50% {
+            right: 600px;
+            top: 300px;
+        }
+        70% {
+            right: 640px;
+            top: 50px;
+        }
+        90% {
+            right: 690px;
+            top: 250px;
+        }
+        100% {
+            right: 1200px;
+            top: 130px;
+            -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            -Moz-transform: scaleX(1);
+        }
+    }
+    
+    #diver {
+        position: absolute;
+        -webkit-animation-name: diver;
+        -webkit-animation-duration: 30s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -ms-animation-name: diver;
+        -ms-animation-duration: 30s;
+        -ms-animation-timing-function: linear;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-play-state: running;
+        /*  */
+        position: absolute;
+        -Moz-animation-name: diver;
+        -Moz-animation-duration: 30s;
+        -Moz-animation-timing-function: linear;
+        -Moz-animation-iteration-count: infinite;
+        -Moz-animation-play-state: running;
+    }
+    /* audio */
+    
+    #audio audio {
+        width: 150px;
+    }
+    
+    #audio audio:hover {
+        cursor: pointer;
+    }
+    
+    #audio {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+    }
+    /* btn ảnh nền */
+    
+    #btnBackgroundLight button,
+    #btnBackgroundNight button {
+        padding: 10px 15px 10px 15px;
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+    }
+    
+    #btnBackgroundNight button {
+        background-color: rgb(10, 43, 48);
+        color: #fff;
+    }
+    
+    #btnBackgroundLight {
+        position: absolute;
+        right: 80px;
+        top: 65px;
+    }
+    
+    #btnBackgroundNight {
+        position: absolute;
+        right: 6px;
+        top: 65px;
+    }
+    
+    #btnBackgroundLight button:hover,
+    #btnBackgroundNight button:hover {
+        cursor: pointer;
+        border: 4px solid rgb(0, 45, 97);
+        color: black;
+    }
+    
+    #btnBackgroundNight button:hover {
+        color: white;
+        border: 4px solid rgb(255, 255, 255);
+    }
